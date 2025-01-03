@@ -1,0 +1,258 @@
+/* Estilos base (ya existentes) */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* Color suave para el fondo */
+  color: #333;
+}
+
+/* Contenedor principal */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Título */
+.title {
+  font-size: 2.5rem;
+  color: #4CAF50; /* Verde suave */
+  margin-bottom: 10px;
+}
+
+/* Descripción */
+.description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de botones */
+.button-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Botones */
+.button {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffcc00; /* Amarillo brillante pero suave */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Botón hover */
+.button:hover {
+  background-color: #ff9900;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #4CAF50;
+}
+
+.footer-text {
+  color: #4CAF50;
+}
+
+/* Estilos adicionales para el chatbot y las emociones */
+
+/* Chatbox */
+.chatbox {
+  border: 1px solid #ddd;
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* Opciones */
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.options button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.options img {
+  width: 180px;  /* Ajusta el tamaño según sea necesario */
+  height: 180px;
+  transition: transform 0.3s;
+}
+
+.options img:hover {
+  transform: scale(1.2);
+}
+
+/* Sección de emojis */
+.emoji-section {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.emoji-options h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.emoji-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.emoji-grid button {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.emoji-grid button:hover {
+  transform: scale(1.2);
+  background-color: #eef;
+}
+
+/* Añadir una transición suave al scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sección de Videos */
+.video-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.video-item {
+  width: 250px; /* Ajuste de tamaño del contenedor del video */
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+}
+
+.video-item p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Enlaces */
+.video-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-item a:hover {
+  opacity: 0.8; /* Efecto de hover en el enlace */
+}
